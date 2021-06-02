@@ -1,0 +1,14 @@
+{:deps {:aliases [:dev]}
+
+ :dev-http {8000 {:roots ["public" "target/dev/app"]}}
+
+ :builds
+ {:app
+  {:target :browser
+   :modules {:main {:entries [juxt.home.card.slate]}}
+
+   :dev
+   {:compiler-options {} #_{:output-feature-set :es5}
+    :output-dir "target/dev/app/js"}
+
+   }}}
