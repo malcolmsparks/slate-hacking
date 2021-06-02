@@ -1,0 +1,5 @@
+= Slate hacking
+
+----
+$ shadow-cljs watch app
+----
